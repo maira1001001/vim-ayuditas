@@ -4,76 +4,73 @@ algunas ayudas para usar vim
 
 ## vim
 
-> te lleva a models
-> `,jm`
+###Buscador ,t
 
-,jc  -------- a controllers
+1. te lleva a models  `,jm`
 
-,js -------- el buscador se pone dentro de spec/
+2. te lleva a controllers  `,jc` 
 
+3. te lleva a spec   `,js`
 
-search and replace
+### Search and Replace
 
-:%s/validate/valid/gc
+1. Busca y reemplaza *validate* por *valid* desde el inicio(`g`) pidiendo confirmacion (`c`)
 
+`:%s/validate/valid/gc`
 
---------------------------------------
-PLUGINS: vi .vimrc.bundles
+-------------------------------------------------------------------------------
 
+### PLUGINS: 
 
-instalar gtk
+> ubicación: vi .vimrc.bundles
+
+#### Instalar GTK
+
+> Para copiar del clipboar
+
+1. `sudo apt-get install vim-gtk`
 
 vim --version, algunos no aparecen como clipboard
 
-sudo apt-get install vim-gtk
+2. Abrir el archivo de configuración 
 
-vim .vimrc
+`vim .vimrc`
 
-agregas: set clipboard=unnamedplus
+3. Agregas
 
---------------------------------------------------------
+`set clipboard=unnamedplus`
 
-instalar vim-vinegar
+#### Instalar vim-vinegar
 
-Plugin 'vim-vinegar'
+1. Agregar `Plugin 'vim-vinegar'`
 
-:BundleInstall
+2. ejecutar `:BundleInstall`
 
------------------------------------
+#### Indentar
 
-indentar de arriba al final
+1. indentar de arriba al final  `gg=G`
 
-gg=G
+#### Tabs
 
----------------------------------
+1. abrir tab nuevo: selecciono archivo y le doy `ctrl + t`
+2. desplazarse a la derecha : `gt`  (go tab)
+3. ir al tab 3: `3 gt`
 
-tabs
+#### plugin surround
 
-abrir tab nuevo: selecciono archivo y le doy "ctrl + t"
-      
-desplazarse a la derecha : gt  (go tab)
+ 1. cambiar comillas simples por dobles: `cs ' "`  (cs: change surround)
+ 2. cambiar paréntesis por corchetes: `cs ( [`
 
-ir al tab 3: 3 gt
+#### Copiar
 
--------------------------------------
-plugin surround
+> te posicionas entre 2 mismos elementos: enter "...", entre (...), entre [...]
 
-cs ' " -> cambiar comillas simples por dobles
+1. copia todo lo que esta dentro de las comillas: `yi '`  (yank inside `'` )
+2. copia todo lo que está dentro de los paréntesis: `yi (` (yank inside `(` ) 
 
-cs ( [ -> cambiar paréntesis por corchetes
+#### Borrar
 
--------------------------------
-COPIAR
-
-te posicionas entre 2 mismos elementos: enter "...", entre (...), entre [...]
-
-yi '  -> yunk inside ' -> copia todo lo que esta dentro de las comillas
-
-yi ( -> yunk inside ( -> copia todo lo que está dentro de los paréntesis
-
-BORRAR
-
-d /patron  -> detele hasta el patron, borra desde ppio de linea hasta "patron"
+1.   -> detele hasta el patron, borra desde ppio de linea hasta "patron"
 
 dt .   -> delete till "." , borrar hasta el punto
 
