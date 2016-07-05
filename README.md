@@ -2,9 +2,10 @@
 algunas ayudas para usar vim 
 
 
-vim
+## vim
 
-,jm -------  te lleva a models
+> te lleva a models
+> `,jm`
 
 ,jc  -------- a controllers
 
@@ -120,8 +121,11 @@ ysiw" : Settings -> "Settings":
 
 ------------------------------
 
-SILVER SEARCH 
+## SILVER SEARCH
 
-abrir con tab con vim todos los archivo "_form.html.erb" del directorio app   ->  vim -p $(ag -g "_form.html" app)
+> abrir con tab con vim todos los archivo "_form.html.erb" del directorio app  
+> `vim -p $(ag -g "_form.html" app)`
 
-reemplanza "change_delay" por "delay_charge" sin abrir el vim, en todos los archivos que estén en la carpeta confirm -> ag -l "charge_delay" config | xargs sed -i "s/charge_delay/delay_charge/g"
+
+> reemplanza "change_delay" por "delay_charge" sin abrir el vim, en todos los archivos que estén en la carpeta confirm
+> `ag -l "charge_delay" config | xargs sed -i "s/charge_delay/delay_charge/g"`
